@@ -1,0 +1,36 @@
+.card{
+    height: 100%;
+    background-color: black;
+    color: white;
+    a{
+        text-decoration: none;
+        color: inherit;
+
+        .card-img{
+            overflow: hidden;
+            img{
+                scale: 1;
+                transition: all 125ms linear;
+            }
+        }
+    
+        .card-info{
+            padding: .8rem;
+            ul{
+                li{
+                    margin-bottom: 1rem;
+                }
+    
+                .card-heading{
+                    color: red;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    
+        &:hover .card-img img{
+            scale: 1.1;
+        }
+    }
+
+}
